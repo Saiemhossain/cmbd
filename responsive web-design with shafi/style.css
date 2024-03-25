@@ -82,26 +82,43 @@ text-align: center;
   padding-top: 20px;
 }
 
-/* Responive css */
-@media (max-width:700px) {
+/* Responsive Css */
+
+@media (max-width:900px) {
   .wrapper{
-    padding: 0 20px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width:680px){
+  section{
+    padding: 30px 0;
   }
   .header-wrapper{
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .hero-wrapper{
-    display: block;
-  }
-  .hero-image{
-    margin-top: 20px;
-  }
-  .services{
     flex-direction: column;
-    text-align: center;
+    gap: 20px;
   }
-   .services img{
+  .hero-image img{
     width: 100%;
-   }
+  }
+  .hero-content{
+    padding-bottom: 50px;
+  }
+}
+@media (max-width:500px){
+.services{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.service img{
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
 }
